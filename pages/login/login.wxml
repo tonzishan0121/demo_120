@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="login-form">
+    <view class="logo">
+      <image src="/static/logo.png" mode="aspectFit" class="logo-image"></image>
+    </view>
+    <view class="input-group">
+      <view class="input-prefix">
+        <text class="iconfont icon-email"></text>
+      </view>
+      <input type="text" placeholder="请输入邮箱" bindinput="bindEmailInput" class="input" />
+    </view>
+    <view class="input-group">
+      <view class="input-prefix">
+        <text class="iconfont icon-password"></text>
+      </view>
+      <input type="password" placeholder="请输入密码" bindinput="bindPasswordInput" class="input" />
+    </view>
+    <button bindtap="login" class="login-btn">登录</button>
+    <view class="skip-login" bindtap="skipLogin">跳过登录</view>
+  </view>
+</view>

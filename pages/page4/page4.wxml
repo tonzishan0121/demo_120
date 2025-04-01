@@ -1,0 +1,176 @@
+<view class="uni_page_wrapper">
+    <view class="uni_view">
+        <view class="uni_view_1">
+            <image class="i" src="https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/58826087962/e228/63d7/1bfb/5ca3a3271d5c3840ee8fdeee0c73281a.png" />
+            <view class="uni_text">
+                <text class="text">120急救平台</text>
+            </view>
+        </view>
+        <view class="uni_view_2">
+            <view class="uni_view_3">
+                <image class="i_1" src="https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/58826084565/cb18/a71f/4bfa/69493151d2efae5d3bfc6de5f68be2bf.png" />
+                <view class="uni_text_1">
+                    <text class="text_1">用户管理</text>
+                </view>
+            </view>
+            <view class="uni_view_4">
+                <image class="i_2" src="https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/58826083698/141f/7f9f/e959/33578ae9f6475b31f04391ed8851b1cc.png" />
+                <view class="uni_text_2">
+                    <text class="text_2">系统参数</text>
+                </view>
+            </view>
+            <view class="uni_view_5">
+                <image class="i_3" src="https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/58826086487/3d72/2279/3f87/ec7b68dc2aaee17ed0ba0cac7cf5573a.png" />
+                <view class="uni_text_3">
+                    <text class="text_3">数据管理</text>
+                </view>
+            </view>
+            <view class="uni_view_6">
+                <image class="i_4" src="https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/58826088059/2dcb/83cf/8fbb/b3091ebcda15f6d511a33825cb4a8290.png" />
+                <view class="uni_text_4">
+                    <text class="text_4">系统日志</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="uni_view_7">
+        <view class="uni_view_8">
+            <view class="uni_view_9">
+                <view class="uni_text_5">
+                    <text class="text_5">用户管理</text>
+                </view>
+            </view>
+            <view class="uni_view_10">
+                <view class="uni_view_11">
+                    <view class="uni_view_12">
+                        <view class="uni_view_13">
+                            <image class="i_5" src="https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/58826085407/1bd3/5934/7bad/17ee112e8ed485108c692b45b97bcc9c.png" />
+                        </view>
+                        <view class="uni_text_6">
+                            <text class="text_6">搜索用户</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="uni_button">
+                    <text class="text_7">新增用户 </text>
+                    <view class="after" />
+                </view>
+            </view>
+        </view>
+        <view class="uni_view_14">
+            <view class="uni_view_15">
+                <view class="table">
+                    <view class="tr">
+                        <view class="th">
+                            <view class="uni_view_16">
+                                <text class="text_8">用户名</text>
+                            </view>
+                        </view>
+                        <view class="th_1">
+                            <view class="uni_view_17">
+                                <text class="text_9">角色</text>
+                            </view>
+                        </view>
+                        <view class="th_2">
+                            <view class="uni_view_18">
+                                <text class="text_10">状态</text>
+                            </view>
+                        </view>
+                        <view class="th_3">
+                            <view class="uni_view_19">
+                                <text class="text_11">操作</text>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="tr_1">
+                        <text class="text_12">张医生</text>
+                        <text class="text_13">管理员</text>
+                        <view class="td">
+                            <view class="uni_text_7">
+                                <text class="text_14">启用</text>
+                            </view>
+                        </view>
+                        <view class="td_1">
+                            <view class="uni_view_20">
+                                <view class="uni_button_1">
+                                    <text class="text_15">编辑</text>
+                                    <view class="after_1" />
+                                </view>
+                                <view class="uni_button_2">
+                                    <text class="text_16">删除</text>
+                                    <view class="after_2" />
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="tr_2">
+                        <text class="text_17">李护士</text>
+                        <text class="text_18">调度员</text>
+                        <view class="td_2">
+                            <view class="uni_text_8">
+                                <text class="text_19">启用</text>
+                            </view>
+                        </view>
+                        <view class="td_3">
+                            <view class="uni_view_21">
+                                <view class="uni_button_3">
+                                    <text class="text_20">编辑</text>
+                                    <view class="after_3" />
+                                </view>
+                                <view class="uni_button_4">
+                                    <text class="text_21">删除</text>
+                                    <view class="after_4" />
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="tr_3">
+                        <text class="text_22">王医生</text>
+                        <text class="text_23">急救员</text>
+                        <view class="td_4">
+                            <view class="uni_text_9">
+                                <text class="text_24">停用</text>
+                            </view>
+                        </view>
+                        <view class="td_5">
+                            <view class="uni_view_22">
+                                <view class="uni_button_5">
+                                    <text class="text_25">编辑</text>
+                                    <view class="after_5" />
+                                </view>
+                                <view class="uni_button_6">
+                                    <text class="text_26">删除</text>
+                                    <view class="after_6" />
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="uni_view_23">
+                <view class="uni_view_24">
+                    <view class="uni_view_25">
+                        <view class="uni_view_26">
+                            <view class="uni_text_10">
+                                <text class="text_27">1</text>
+                            </view>
+                            <view class="uni_text_11">
+                                <text class="text_28">/10</text>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="uni_view_27">
+                        <view class="uni_text_12">
+                            <text class="text_29">prev</text>
+                        </view>
+                    </view>
+                    <view class="uni_view_28">
+                        <view class="uni_text_13">
+                            <text class="text_30">next</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

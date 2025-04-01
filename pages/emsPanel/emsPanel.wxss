@@ -1,0 +1,104 @@
+/* 内容区样式 */
+.content {
+  display: relative;
+  padding: 10px;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* 资源部分 */
+.resource-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  height: 20%;
+}
+.resource-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin: 0 5px;
+}
+.resource-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+}
+.resource-label {
+  margin-bottom: 10px;
+}
+.label-text {
+  color: #333;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.5px;
+}
+.resource-data {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.data-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.data-value {
+  color: #1890ff;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33.5px;
+}
+.data-label {
+  color: #666;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.5px;
+}
+.data-label.nowrap {
+  white-space: nowrap;
+}
+/*选项菜单*/
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.menu-item.active {
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menu-text {
+  color: #333;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.5px;
+}

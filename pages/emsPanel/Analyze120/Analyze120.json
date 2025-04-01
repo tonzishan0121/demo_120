@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "task-item": "/components/task-item/task-item",
+    "wx-echarts":"/wx-echarts/ec-canvas"
+  }
+}

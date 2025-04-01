@@ -1,0 +1,3 @@
+<view class="container">
+  <canvas canvas-id="mychart-dom-bar" id="mychart-dom-bar" class="echarts"></canvas>
+</view>

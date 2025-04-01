@@ -1,0 +1,54 @@
+/* components/task-item.wxss */
+.task-header {
+  display: absolute;
+  margin-bottom: 5rpx;
+  width: 100%;
+  border: 0.5px solid gray;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.task-id {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.task-status {
+  font-size: 12px;
+  border-radius: 4px;
+  position: relative;
+  top:-24px;
+  left: 90%;
+  margin-top: 0%;
+  align-items: center;
+}
+
+.task-location {
+  font-size: 13px;
+  align-items: center;
+  display: inline;
+}
+
+.task-time {
+  font-size: 12px;
+  position: absolute;
+  margin-top: -30px;
+  align-items: center;
+  display: block;
+}
+/* 状态样式 */
+.status-pending {
+  background-color: #ffcc00;
+}
+
+.status-processing {
+  background-color: #007aff;
+}
+
+.status-completed {
+  background-color: #34c759;
+}
+.cuIcon-locationfill:before {
+	content: "\e650";
+}

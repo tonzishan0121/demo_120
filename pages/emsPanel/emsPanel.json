@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "120急救大数据平台",
+  "navigationBarBackgroundColor": "#1e3799",
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#f5f6fa",
+  "usingComponents": {
+    "RecentTasks":"/pages/emsPanel/RecentTasks/RecentTasks",
+    "DoTasks":"/pages/emsPanel/DoTasks/DoTasks",
+    "Analyze120":"/pages/emsPanel/Analyze120/Analyze120"
+  }
+}

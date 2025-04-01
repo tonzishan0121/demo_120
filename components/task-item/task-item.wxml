@@ -1,0 +1,12 @@
+<!-- components/task-item.wxml -->
+<view class="task-header">
+  <text class="task-id">任务编号: {{ task.id }}</text>
+  <text class="task-status {{ 'status-' + task.status }}">
+    {{ task.statusText }}
+  </text>
+  <view class="cuIcon-locationfill">
+    <text class="task-location">{{task.location+task.description}}</text>
+  </view>
+  
+  <text class="task-time">{{task.time}}</text>
+</view>

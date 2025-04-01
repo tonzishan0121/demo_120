@@ -1,0 +1,78 @@
+/* pages/emsPanel/RecentTasks.wxss */
+/* 调度记录部分 */
+.schedule-list {
+  margin-bottom: 20px;
+}
+.schedule-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.schedule-item.completed {
+  border: 1px solid #52c41a;
+}
+.schedule-item.in-progress {
+  border: 1px solid #ffdd57;
+}
+.schedule-item.pending {
+  border: 1px solid #ff4d4f;
+}
+.schedule-time, .schedule-status, .schedule-description, .schedule-handler {
+  margin-bottom: 5px;
+}
+.time-text, .status-text, .description-text, .handler-text {
+  color: #666;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+.schedule-status {
+  background-color: #f8f9fa;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+.schedule-status.completed {
+  background-color: rgba(82, 196, 26, 0.1);
+}
+.schedule-status.in-progress {
+  background-color: rgba(255, 221, 87, 0.1);
+}
+.schedule-status.pending {
+  background-color: rgba(255, 77, 79, 0.1);
+}
+
+/* 分页组件 */
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.page-text {
+  color: #666;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  right: 50%;
+  white-space: nowrap;
+  line-height: 30px;
+}
+
+.pagination-buttons {
+  display: flex;
+  gap: 10px;
+}
+.page-button {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: #333;
+}

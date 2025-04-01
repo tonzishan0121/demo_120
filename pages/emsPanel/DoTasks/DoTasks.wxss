@@ -1,0 +1,56 @@
+.TaskContainer{
+  position: relative;
+}
+/* 侧边栏 */
+.sidebar {
+  width: 200px;
+  height: 500px;
+  background-color: gray;
+  transition: transform 0.3s ease;
+  transform: translateX(-200px);
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  opacity: 0.7;
+}
+
+.sidebar-open {
+  transform: translateX(0);
+}
+
+.item_time{
+  font-size: 12px;
+  color: #666;
+}
+.item_location{
+  font-size: 14px;
+  color: #333;
+  white-space: nowrap; /* 防止文本换行 */
+  overflow: hidden; /* 隐藏溢出的文本 */
+  text-overflow: ellipsis; /* 显示省略号 */
+}
+
+.item_content{
+  font-size: 14px;
+  color: #333;
+  white-space: nowrap;
+  overflow: auto;
+}
+/*右侧按钮*/
+.toggle-button {
+  position: absolute;
+  top: 10px;
+  right:10px;
+  padding: 10px;
+  background-color: #007aff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 20px;
+}
+
+/*搜索框*/
+
+
+

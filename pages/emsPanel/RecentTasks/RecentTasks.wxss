@@ -1,7 +1,11 @@
 /* pages/emsPanel/RecentTasks.wxss */
 /* 调度记录部分 */
 .schedule-list {
-  margin-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
 }
 .schedule-item {
   display: flex;

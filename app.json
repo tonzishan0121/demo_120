@@ -4,15 +4,20 @@
     "pages/index/index",
     "pages/emsPanel/emsPanel",
     "pages/page4/page4",
-    "pages/emergencyClass/emergencyClass"
+    "pages/emergencyClass/emergencyClass",
+    "pages/test_page/test_page"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
     "navigationBarTitleText": "120急救大数据平台",
-    "navigationBarBackgroundColor": "#ffffff"
+    "navigationBarBackgroundColor": "#1e3799",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f5f6fa"
   },
   "style": "v2",
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "useExtendedLib": {
+    "weui": true
+  }
 }

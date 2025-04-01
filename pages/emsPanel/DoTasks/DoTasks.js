@@ -2,11 +2,8 @@ Component({
   properties: {
   },
   data: {
-    inputShowed: false,
-    inputVal: '',
-    isFocus: false,
-    isSidebarOpen:false,
-    tasks:[]
+    tasks:[],
+    inputcontent:null
   },
   attached: function() {
     var that = this;
@@ -28,32 +25,17 @@ Component({
       this.setData({ isSidebarOpen: temp });
       console.log("展开侧边栏：", this.data.isSidebarOpen);
     },
-    showInput() {
+    onSearchInput: function(e) {
+      console.log('输入内容：', e.detail.value);
       this.setData({
-        inputShowed: true,
-      });
+        inputcontent:e.detail.value
+      })
     },
-    blurInput() {
-      this.setData({
-        isFocus: false,
-      });
+    onSearch: function(e) {
+      console.log('执行搜索：', e.detail.value);
     },
-    hideInput() {
-      this.setData({
-        inputVal: '',
-        inputShowed: false,
-      });
-    },
-    clearInput() {
-      this.setData({
-        inputVal: '',
-      });
-    },
-    inputTyping(e) {
-      this.setData({
-        inputVal: e.detail.value,
-        isFocus: true,
-      });
-    },
+    onCancel: function() {
+      console.log('取消搜索');
+    }
   }
 });

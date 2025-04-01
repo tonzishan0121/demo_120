@@ -21,7 +21,7 @@ Page({
   },
   tabSelect:function(e) {
     let index=e.currentTarget.dataset.index;
-    //console.log("跳转:",index,this.data.selector[index]);
+    console.log("跳转:",index,this.data.selector[index]);
     this.setData({TabCur:index});
   }
 });

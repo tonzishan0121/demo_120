@@ -1,42 +1,26 @@
 <view class="TaskContainer">
+  <image src="/static/上海.jpg" mode="aspectFill" class="background"/>
 <!-- 侧边栏 -->
 <view class="sidebar {{isSidebarOpen?'sidebar-open':''}}" :class="">
   <!-- 实现搜索框 -->
-  <view class="page__bd">
-		<view class="weui-search-bar {{inputShowed ? 'weui-search-bar_focusing' : ''}}" id="searchBar">
-			<form class="weui-search-bar__form"
-      aria-role="combobox"
-      aria-haspopup="true"
-      aria-expanded="{{inputVal.length > 0 ? 'true' : 'false'}}"
-      aria-owns="searchResult"
-      >
-        <view aria-hidden="true" class="weui-search-bar__box">
-          <i class="weui-icon-search"></i>
-          <input aria-controls="searchResult" type="text" class="weui-search-bar__input {{isFocus ? 'weui-search-bar__input_focus' : ''}}" placeholder="搜索" value="{{inputVal}}" bindinput="inputTyping" focus="{{inputShowed}}" bindblur="blurInput"/>
-          <view class="weui-search-bar__mask"></view>
-          <view aria-role="button" aria-label="清除" class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput"></view>
-        </view>
-        <label class="weui-search-bar__label" bindtap="showInput">
-          <i class="weui-icon-search"></i>
-          <span class="weui-search-bar__label__text">搜索</span>
-        </label>
-			</form>
-      <view aria-role="button" class="weui-search-bar__cancel-btn" bindtap="hideInput">取消</view>
-		</view>
-		<view aria-role="listbox" id="searchResult" class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
-    <view wx:for="{{tasks}}" wx:key="index">
-      <view role="option" class="weui-cell weui-cell_active weui-cell_access">
-          <view class="weui-cell__bd weui-cell_primary">
-            <view class="item_time">{{item.time}}</view>
-            <view class="item_location">{{item.location}}</view>
-            <view class="item_content">{{item.description}}</view>
-          </view>
-        </view> 
-    </view>
-			
-			
-		</view>
-	</view>
+  <view>
+  <mp-searchbar
+    placeholder="请输入搜索内容"
+    bindinput="onSearchInput"
+    bindsearch="onSearch"
+    cancelText="取消"
+    bindcancel="onCancel"
+  ></mp-searchbar>
+  <view class="suggestion-list" wx:if="{{(tasks.length > 0)&&(inputcontent.length>0)}}">
+    <block wx:for="{{tasks}}" wx:key="id">
+      <view class="item">
+        <view class="item_time" bindtap="onSuggestionTap">{{item.time}}</view>
+        <view class="item_location">{{item.location}}</view>
+        <view class="item_content">{{item.description}}</view>
+      </view>
+    </block>
+  </view>
+</view>
   
 </view>
   <!-- 控制按钮 -->

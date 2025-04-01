@@ -1,2 +1,4 @@
 logs
 __test__
+node_modules/
+miniprogram_npm/

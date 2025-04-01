@@ -1,272 +1,88 @@
-<view class="uni_app">
-    <view class="uni_page_head">
-        <view class="div">
-            <view class="div_1" />
-            <view class="div_2" />
-            <view class="div_3">
-                <text class="text">uni-app</text>
-            </view>
-        </view>
+<view class="container">
+  <view class="emergency-platform">
+    <view class="platform-header">
+      <view class="platform-icon">
+        <image class="platform-image" src="/static/blueQustion.png" />
+      </view>
+      <view class="platform-title">
+        <text class="platform-text">120急救大数据平台</text>
+      </view>
     </view>
-    <view class="uni_page_wrapper">
-        <view class="uni_page_body">
-            <view class="uni_view">
-                <view class="uni_view_1">
-                    <view class="uni_view_2">
-                        <view class="i">
-                            <view class="svg">
-                                <image class="group" src="https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/58826126806/b23d/d3dc/4a95/a05722ee372f0d2de68cb1ba6ddb51e2.png" />
-                            </view>
-                        </view>
-                        <view class="uni_text">
-                            <text class="text_1">120急救大
-                                数据平台</text>
-                        </view>
-                    </view>
-                    <view class="uni_view_3">
-                        <view class="uni_view_4">
-                            <view class="i_1">
-                                <view class="svg_1">
-                                    <image class="group_1" src="https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/57703012047/10bc/ce5b/d94b/96c2cde944e4e2da2c708c650860f37b.png" />
-                                </view>
-                            </view>
-                        </view>
-                        <view class="uni_view_5">
-                            <view class="uni_view_6">
-                                <view class="uni_view_7">
-                                    <view class="i_2">
-                                        <view class="svg_2">
-                                            <image class="group_2" src="https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/58826129551/815c/3e17/2aef/8eba117e7b57e272bfa1124b6c3f257a.png" />
-                                        </view>
-                                    </view>
-                                </view>
-                                <view class="uni_text_1">
-                                    <text class="text_2">搜索急救知识/课程/
-                                        资讯</text>
-                                </view>
-                            </view>
-                        </view>
-                    </view>
-                </view>
-                <view class="uni_scroll_view">
-                    <view class="div_4">
-                        <view class="div_5">
-                            <view class="div_6">
-                                <view class="uni_view_8">
-                                    <view class="uni_view_9">
-                                        <view class="i_3">
-                                            <view class="svg_3">
-                                                <image class="group_3" src="https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/58826131374/89c3/96d6/7f9d/e8f62dd735cd69a3ab9952b5d8e0308f.png" />
-                                            </view>
-                                        </view>
-                                        <view class="uni_text_2">
-                                            <text class="text_3">在线培训课程</text>
-                                        </view>
-                                        <view class="uni_text_3">
-                                            <text class="text_4">专业急救培训课程</text>
-                                        </view>
-                                    </view>
-                                    <view class="uni_view_10">
-                                        <view class="i_4">
-                                            <view class="svg_4">
-                                                <image class="group_4" src="https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/58826130397/615e/4435/f10c/3de07946846a2bf83d9ae3cbd4cce2dc.png" />
-                                            </view>
-                                        </view>
-                                        <view class="uni_text_4">
-                                            <text class="text_5">急救知识库</text>
-                                        </view>
-                                        <view class="uni_text_5">
-                                            <text class="text_6">急救知识快速查询</text>
-                                        </view>
-                                    </view>
-                                    <view class="uni_view_11">
-                                        <view class="i_5">
-                                            <view class="svg_5">
-                                                <image class="group_5" src="https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/58826128604/e542/28ca/7bc7/1a8f42c0037f8dc946b2a0aa426bc3b7.png" />
-                                            </view>
-                                        </view>
-                                        <view class="uni_text_6">
-                                            <text class="text_7">资讯动态</text>
-                                        </view>
-                                        <view class="uni_text_7">
-                                            <text class="text_8">急救行业最新动态</text>
-                                        </view>
-                                    </view>
-                                    <view class="uni_view_12">
-                                        <view class="i_6">
-                                            <view class="svg_6">
-                                                <image class="group_6" src="https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/58826129631/380c/9131/2ff1/a2d4594f4d795c6dd237b2aa4cbebeb4.png" />
-                                            </view>
-                                        </view>
-                                        <view class="uni_text_8">
-                                            <text class="text_9">政策法规查询</text>
-                                        </view>
-                                        <view class="uni_text_9">
-                                            <text class="text_10">权威政策法规文件</text>
-                                        </view>
-                                    </view>
-                                </view>
-                                <view class="uni_view_13">
-                                    <view class="uni_view_14">
-                                        <view class="uni_text_10">
-                                            <text class="text_11">推荐课程</text>
-                                        </view>
-                                        <view class="i_7">
-                                            <view class="svg_7">
-                                                <image class="group_7" src="https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/57703007416/ec70/132a/37b8/4e035bff3b549643ab684906e763f82c.png" />
-                                            </view>
-                                        </view>
-                                    </view>
-                                    <view class="uni_scroll_view_1">
-                                        <view class="div_7">
-                                            <view class="div_8">
-                                                <view class="div_9">
-                                                    <view class="uni_view_15">
-                                                        <view class="uni_view_16">
-                                                            <view class="uni_image">
-                                                                <view class="div_10" />
-                                                            </view>
-                                                            <view class="uni_view_17">
-                                                                <view class="uni_text_11">
-                                                                    <text class="text_12">CPR心肺复
-                                                                        苏基础课程</text>
-                                                                </view>
-                                                                <view class="uni_view_18">
-                                                                    <view class="uni_text_12">
-                                                                        <text class="text_13">2小时</text>
-                                                                    </view>
-                                                                    <view class="uni_text_13">
-                                                                        <text class="text_14">入门级</text>
-                                                                    </view>
-                                                                </view>
-                                                                <view class="uni_view_19">
-                                                                    <view class="uni_view_20" />
-                                                                </view>
-                                                            </view>
-                                                        </view>
-                                                        <view class="uni_view_21">
-                                                            <view class="uni_image_1">
-                                                                <view class="div_11" />
-                                                            </view>
-                                                            <view class="uni_view_22">
-                                                                <view class="uni_text_14">
-                                                                    <text class="text_15">创伤救护实
-                                                                        操技能</text>
-                                                                </view>
-                                                                <view class="uni_view_23">
-                                                                    <view class="uni_text_15">
-                                                                        <text class="text_16">3小时</text>
-                                                                    </view>
-                                                                    <view class="uni_text_16">
-                                                                        <text class="text_17">进阶级</text>
-                                                                    </view>
-                                                                </view>
-                                                                <view class="uni_view_24">
-                                                                    <view class="uni_view_25" />
-                                                                </view>
-                                                            </view>
-                                                        </view>
-                                                        <view class="uni_view_26">
-                                                            <view class="uni_image_2">
-                                                                <view class="div_12" />
-                                                            </view>
-                                                            <view class="uni_view_27">
-                                                                <view class="uni_text_17">
-                                                                    <text class="text_18">急救应急预
-                                                                        案培训</text>
-                                                                </view>
-                                                                <view class="uni_view_28">
-                                                                    <view class="uni_text_18">
-                                                                        <text class="text_19">1.5小时</text>
-                                                                    </view>
-                                                                    <view class="uni_text_19">
-                                                                        <text class="text_20">高级</text>
-                                                                    </view>
-                                                                </view>
-                                                                <view class="uni_view_29">
-                                                                    <view class="uni_view_30" />
-                                                                </view>
-                                                            </view>
-                                                        </view>
-                                                    </view>
-                                                </view>
-                                            </view>
-                                        </view>
-                                    </view>
-                                </view>
-                                <view class="uni_view_31">
-                                    <view class="uni_view_32">
-                                        <view class="uni_text_20">
-                                            <text class="text_21">最新资讯</text>
-                                        </view>
-                                        <view class="i_8">
-                                            <view class="svg_8">
-                                                <image class="group_8" src="https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/57703007416/ec70/132a/37b8/4e035bff3b549643ab684906e763f82c.png" />
-                                            </view>
-                                        </view>
-                                    </view>
-                                    <view class="uni_view_33">
-                                        <view class="uni_view_34">
-                                            <view class="uni_view_35">
-                                                <view class="uni_text_21">
-                                                    <text class="text_22">我市开展急救知识进社区活动</text>
-                                                </view>
-                                                <view class="uni_view_36">
-                                                    <view class="uni_text_22">
-                                                        <text class="text_23">2024-01-20</text>
-                                                    </view>
-                                                    <view class="uni_text_23">
-                                                        <text class="text_24">2,356阅读</text>
-                                                    </view>
-                                                </view>
-                                            </view>
-                                            <view class="uni_image_3">
-                                                <view class="div_13" />
-                                            </view>
-                                        </view>
-                                        <view class="uni_view_37">
-                                            <view class="uni_view_38">
-                                                <view class="uni_text_24">
-                                                    <text class="text_25">新版院前急救规范正式发布</text>
-                                                </view>
-                                                <view class="uni_view_39">
-                                                    <view class="uni_text_25">
-                                                        <text class="text_26">2024-01-19</text>
-                                                    </view>
-                                                    <view class="uni_text_26">
-                                                        <text class="text_27">1,892阅读</text>
-                                                    </view>
-                                                </view>
-                                            </view>
-                                            <view class="uni_image_4">
-                                                <view class="div_14" />
-                                            </view>
-                                        </view>
-                                        <view class="uni_view_40">
-                                            <view class="uni_view_41">
-                                                <view class="uni_text_27">
-                                                    <text class="text_28">智慧急救系统全面升级</text>
-                                                </view>
-                                                <view class="uni_view_42">
-                                                    <view class="uni_text_28">
-                                                        <text class="text_29">2024-01-18</text>
-                                                    </view>
-                                                    <view class="uni_text_29">
-                                                        <text class="text_30">3,421阅读</text>
-                                                    </view>
-                                                </view>
-                                            </view>
-                                            <view class="uni_image_5">
-                                                <view class="div_15" />
-                                            </view>
-                                        </view>
-                                    </view>
-                                </view>
-                            </view>
-                        </view>
-                    </view>
-                </view>
-            </view>
-        </view>
+    <view class="search-bar">
+      <view class="search-icon">
+        <image class="search-image" src="/static/people.png" />
+      </view>
+      <view class="search-input">
+        <text class="search-text">搜索急救知识/课程/资讯</text>
+      </view>
     </view>
+  </view>
+  <view class="feature-modules">
+    <block wx:for="{{featureModules}}" wx:key="index">
+      <view class="feature-module" style="background-color: {{item.backgroundColor}};">
+        <view class="feature-icon">
+          <image class="feature-image" src="{{item.icon}}" />
+        </view>
+        <view class="feature-title">
+          <text class="feature-text">{{item.title}}</text>
+        </view>
+        <view class="feature-description">
+          <text class="feature-desc">{{item.description}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="recommended-courses">
+    <view class="section-header">
+      <text class="section-title">推荐课程</text>
+      <view class="more-icon">
+        <image class="more-image" src="/static/arrow.png" />
+      </view>
+    </view>
+    <view class="course-cards">
+      <block wx:for="{{recommendedCourses}}" wx:key="index">
+        <view class="course-card">
+          <view class="course-image">
+            <image class="course-img" src="{{item.image}}" />
+          </view>
+          <view class="course-info">
+            <text class="course-title">{{item.title}}</text>
+            <view class="course-meta">
+              <text class="course-duration">{{item.duration}}</text>
+              <text class="course-level">{{item.level}}</text>
+            </view>
+            <view class="course-progress">
+              <view class="progress-bar">
+                <view class="progress-fill" style=" width:{{item.progress}};"></view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="latest-news">
+    <view class="section-header">
+      <text class="section-title">最新资讯</text>
+      <view class="more-icon">
+        <image class="more-image" src="/static/arrow.png" />
+      </view>
+    </view>
+    <view class="news-items">
+      <block wx:for="{{latestNews}}" wx:key="index">
+        <view class="news-item">
+          <view class="news-image">
+            <image class="news-img" src="{{item.image}}" />
+          </view>
+          <view class="news-content">
+            <text class="news-title">{{item.title}}</text>
+            <view class="news-meta">
+              <text class="news-date">{{item.date}}</text>
+              <text class="news-views">{{item.views}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
 </view>

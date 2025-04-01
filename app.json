@@ -3,7 +3,6 @@
     "pages/login/login",
     "pages/index/index",
     "pages/emsPanel/emsPanel",
-    "pages/page4/page4",
     "pages/emergencyClass/emergencyClass",
     "pages/test_page/test_page"
   ],

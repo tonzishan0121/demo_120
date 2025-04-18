@@ -41,10 +41,10 @@
   <!-- 快速操作按钮 -->
   <view class="quick-actions">
     <view class="action-btn emergency">
-      <navigator url="/pages/emsPanel/emsPanel"><text>资源\n调度</text></navigator>
+      <navigator url="/pages/emsPanel/emsPanel"><text>资源 \n 调度</text></navigator>
     </view>
     <view class="action-btn dispatch">
-      <navigator url="/pages/emergencyClass/emergencyClass"><text>急救\n培训</text></navigator>
+      <navigator url="/pages/emergencyClass/emergencyClass"><text>急救 \n 培训</text></navigator>
     </view>
   </view>
   <!-- 任务完成情况 -->

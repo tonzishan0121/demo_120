@@ -30,7 +30,7 @@ Page({
           getApp().globalData.userInfo=useInfo;
           wx.setStorage({
             key: 'access_token',
-            data: res.value,
+            data: res.data.access_token
           });
           wx.redirectTo({
             url: '/pages/index/index'

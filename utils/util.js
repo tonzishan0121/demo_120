@@ -14,6 +14,22 @@ const formatNumber = n => {
   return n[1] ? n : `0${n}`
 }
 
-export default {
-  formatTime
+function requestAndSetData(url, dataKey, context=this) {
+  wx.request({
+    url: url,
+    method: 'GET',
+    success: (res) => {
+      context.setData({
+        [dataKey]: res.data,
+      });
+    },
+    fail: (err) => {
+      console.error(err);
+    }
+  });
+}
+
+module.exports = {
+  formatTime:formatTime,
+  requestAndSetData:requestAndSetData
 }

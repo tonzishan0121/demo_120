@@ -1,8 +1,9 @@
 /* 全局样式 */
-view, text, image {
+.container-view, .container-text, .container-image {
   box-sizing: border-box;
 }
-image {
+
+.container-image {
   width: auto;
   height: auto;
 }
@@ -65,6 +66,15 @@ image {
   line-height: 16.5px;
 }
 
+/* 变化率样式 */
+.card-trend.up {
+  color: #e17055; 
+}
+
+.card-trend.down {
+  color: #00b894; 
+}
+
 /* 任务完成情况 */
 .task-panel {
   background-color: #fff;
@@ -116,7 +126,7 @@ image {
 
 .progress-inner {
   background-color: #1e3799;
-  width: 78%;
+  /* width:auto; */
   height: 10px;
 }
 

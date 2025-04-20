@@ -67,6 +67,7 @@
 
 .pagination-buttons {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 .page-button {
@@ -79,4 +80,8 @@
   font-weight: 400;
   line-height: 19.5px;
   color: #333;
+}
+.page-button:hover {
+  background-color: #e2e6ea;
+  cursor: pointer;
 }

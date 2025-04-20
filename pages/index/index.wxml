@@ -26,7 +26,7 @@
       <view class="card-title">平均响应时间</view>
       <view class="card-number">{{response_time.today_avg_response_time}}分钟</view>
       <view class="card-trend {{response_time.change_percentage > 0 ? 'up' : 'down'}}">
-        {{response_time.change_percentage > 0 ? '↑' : '↓'}}{{tresponse_time.change_percentage > 0 ?response_time.change_percentage:-response_time.change_percentage}}%
+        {{response_time.change_percentage > 0 ? '↑' : '↓'}}{{response_time.change_percentage > 0 ?response_time.change_percentage:-response_time.change_percentage}}%
       </view>
     </view>
   </view>
@@ -58,7 +58,7 @@
   <!-- 任务完成情况 -->
   <view class="task-panel">
     <view class="task-header">
-      <view class="task-title">实时应急响应情况</view>
+      <view class="task-title">平台实时繁忙度</view>
       <view class="task-percent">{{taskPercent}}%</view>
     </view>
     <view class="progress-bar">
@@ -66,15 +66,15 @@
     </view>
     <view class="task-stats">
       <view class="stat-item">
-        <view class="stat-number">42</view>
+        <view class="stat-number">{{tasks_status.completed}}</view>
         <view class="stat-label">已完成</view>
       </view>
       <view class="stat-item">
-        <view class="stat-number">12</view>
+        <view class="stat-number">{{tasks_status.processing}}</view>
         <view class="stat-label">进行中</view>
       </view>
       <view class="stat-item">
-        <view class="stat-number">8</view>
+        <view class="stat-number">{{tasks_status.pending}}</view>
         <view class="stat-label">待处理</view>
       </view>
     </view>

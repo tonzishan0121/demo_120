@@ -1,49 +1,49 @@
 <view class="content">
   <view class="resource-section">
         <view class="resource-item">
-            <image class="resource-icon" src="https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/58825968688/178e/e3fe/b6cb/8e271ca8231f267c63b8bc4486c339f2.png" />
+            <view class="resource-icon .cuIcon-taxi"></view>
             <view class="resource-label">
-                <text class="label-text">车辆资源</text>
+              <text class="label-text">车辆资源</text>
             </view>
             <view class="resource-data">
                 <view class="data-item">
-                    <text class="data-value">15</text>
+                    <text class="data-value">{{sum_ambulance}}</text>
                     <text class="data-label nowrap">在线</text>
                 </view>
                 <view class="data-item">
-                    <text class="data-value">8</text>
-                    <text class="data-label nowrap">任务中</text>
-                </view>
-            </view>
-        </view>
-        <view class="resource-item">
-            <image class="resource-icon" src="https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/58825969351/00f3/f9ff/e499/f5de11858dbf351193161521e8f131c0.png" />
-            <view class="resource-label">
-                <text class="label-text">医护人员</text>
-            </view>
-            <view class="resource-data">
-                <view class="data-item">
-                    <text class="data-value">45</text>
-                    <text class="data-label nowrap">当班</text>
-                </view>
-                <view class="data-item">
-                    <text class="data-value">32</text>
+                    <text class="data-value">{{ambulance.idle_ambulance_count}}</text>
                     <text class="data-label nowrap">待命中</text>
                 </view>
             </view>
         </view>
         <view class="resource-item">
-            <image class="resource-icon" src="https://seal-img.nos-jd.163yun.com/obj/w5rCgMKVw6DCmGzCmsK-/58825972081/26c1/52f9/8d92/a817e42d52178d8fab77cbb3ee866c5f.png" />
+            <view class="resource-icon .cuIcon-group"/>
+            <view class="resource-label">
+                <text class="label-text">医护人员</text>
+            </view>
+            <view class="resource-data">
+                <view class="data-item">
+                    <text class="data-value">{{sum_staff}}</text>
+                    <text class="data-label nowrap">当班</text>
+                </view>
+                <view class="data-item">
+                    <text class="data-value">{{staff.standby_staff_count}}</text>
+                    <text class="data-label nowrap">待命中</text>
+                </view>
+            </view>
+        </view>
+        <view class="resource-item">
+            <image class="resource-icon .cuIcon-news" />
             <view class="resource-label">
                 <text class="label-text">医疗设备</text>
             </view>
             <view class="resource-data">
                 <view class="data-item">
-                    <text class="data-value">56</text>
+                    <text class="data-value">{{sum_equipment}}</text>
                     <text class="data-label">总数</text>
                 </view>
                 <view class="data-item">
-                    <text class="data-value">48</text>
+                    <text class="data-value">{{equipment.available_equipment_count}}</text>
                     <text class="data-label">可用</text>
                 </view>
             </view>

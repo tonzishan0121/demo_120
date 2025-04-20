@@ -1,28 +1,28 @@
 <view class="TaskContainer">
   <image src="/static/上海.jpg" mode="aspectFill" class="background"/>
 <!-- 侧边栏 -->
-<view class="sidebar {{isSidebarOpen?'sidebar-open':''}}" :class="">
-  <!-- 实现搜索框 -->
-  <view>
-  <mp-searchbar
-    placeholder="请输入搜索内容"
-    bindinput="onSearchInput"
-    bindsearch="onSearch"
-    cancelText="取消"
-    bindcancel="onCancel"
-  ></mp-searchbar>
-  <view class="suggestion-list" wx:if="{{(tasks.length > 0)&&(inputcontent.length>0)}}">
-    <block wx:for="{{tasks}}" wx:key="id">
-      <view class="item">
-        <view class="item_time" bindtap="onSuggestionTap">{{item.time}}</view>
-        <view class="item_location">{{item.location}}</view>
-        <view class="item_content">{{item.description}}</view>
+  <view class="sidebar {{isSidebarOpen?'sidebar-open':''}}" :class="">
+    <!-- 实现搜索框 -->
+    <view>
+      <mp-searchbar
+        placeholder="请输入搜索内容"
+        bindinput="onSearchInput"
+        bindsearch="onSearch"
+        cancelText="取消"
+        bindcancel="onCancel"
+      ></mp-searchbar>
+      <view class="suggestion-list" wx:if="{{(tasks.length > 0)&&(inputcontent.length>0)}}">
+        <block wx:for="{{filteredTasks}}" wx:key="id">
+          <view class="item" bindtap="onSuggestionTap" data-id="{{item.id}}">
+            <view class="item_time" bindtap="onSuggestionTap">{{item.time}}</view>
+            <view class="item_location">{{item.location}}</view>
+            <view class="item_content">{{item.description}}</view>
+          </view>
+        </block>
       </view>
-    </block>
+    </view>
+    
   </view>
-</view>
-  
-</view>
   <!-- 控制按钮 -->
   <view class="toggle-button" bindtap="toggleSidebar">
     <text>{{ isSidebarOpen ? "<" : ">" }}</text>

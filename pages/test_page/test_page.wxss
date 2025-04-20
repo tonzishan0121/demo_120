@@ -1,8 +1,11 @@
-/* pages/test_page/test_page.wxss */
+/* page.wxss */
 .container {
+  position: relative;
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 300px; /* 设置一个合适的高度 */
+}
+
+.ec-canvas {
+  width: 100%;
+  height: 100%;
 }

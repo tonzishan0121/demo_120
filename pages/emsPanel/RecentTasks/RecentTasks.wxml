@@ -11,5 +11,10 @@
         <text class="page-text">{{now_page}}/{{pages}}页</text>
         <button class="page-button" bindtap="nextPage">下一页</button>
     </view>
+    <view class="pagination-buttons">
+      <picker mode="selector" range="{{sizeSelect}}" bindchange="setPageSize">
+        <text class="page-button">每页显示{{pageSize}}条</text>
+      </picker>
+    </view>
   </view>
 </view>

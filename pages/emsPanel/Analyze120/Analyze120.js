@@ -1,6 +1,4 @@
-// pages/emergencyClass/Analyze120.js
 Component({
-
   /**
    * 组件的属性列表
    */
@@ -12,38 +10,56 @@ Component({
    * 组件的初始数据
    */
   data: {
-    tasks: [
-      {
-        id: 'T001',
-        status: 'pending',
-        statusText: '待处理',
-        location: '北京市朝阳区建国路',
-        description: '交通事故，需要紧急救护',
-        time: '2024-01-20 10:30'
+    hours:[],
+
+    counts:[],
+
+    option1 : {
+      title: {
+          text: '24小时内任务数量变化'
       },
-      {
-        id: 'T002',
-        status: 'processing',
-        statusText: '进行中',
-        location: '北京市海淀区中关村',
-        description: '老人突发心脏病，需要救护',
-        time: '2024-01-20 11:00'
+      xAxis: {
+          type: 'category',
+          data: hours
       },
-      {
-        id: 'T003',
-        status: 'completed',
-        statusText: '已完成',
-        location: '北京市西城区西单',
-        description: '工地意外，需要紧急救护',
-        time: '2024-01-20 09:15'
-      }
-    ]
+      yAxis: {
+          type: 'value',
+          name: '任务数量'
+      },
+      series: [{
+          data: counts,
+          type: 'line',
+          smooth: true
+      }]
+  }
   },
 
+  created:function(){
+    const taskCountByHour = [
+      {hour: '00:00-01:00', count: 5},
+      {hour: '01:00-02:00', count: 3},
+      {hour: '02:00-03:00', count: 8},
+      {hour: '03:00-04:00', count: 10},
+      {hour: '04:00-05:00', count: 2},
+      {hour: '05:00-06:00', count: 0},
+      {hour: '06:00-07:00', count: 6},
+      {hour: '07:00-08:00', count: 3},
+      {hour: '08:00-09:00', count: 7},
+      {hour: '09:00-10:00', count: 1},
+      {hour: '10:00-11:00', count: 5},
+      {hour: '11:00-12:00', count: 3} 
+    ];
+    const hours = taskCountByHour.map(item => item.hour);
+    const counts = taskCountByHour.map(item => item.count);
+    this.setData({
+      hours:hours,
+      counts:counts
+    })
+  },
   /**
    * 组件的方法列表
    */
   methods: {
-
+    
   }
 })

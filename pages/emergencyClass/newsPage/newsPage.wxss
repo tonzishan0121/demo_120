@@ -1,0 +1,25 @@
+.nav-bar {
+  height: 90rpx;
+  padding: 0 30rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2rpx 6rpx rgba(0,0,0,0.1);
+}
+
+.content-scroll {
+  height: calc(100vh - 90rpx);
+}
+
+.webview-container {
+  height: 60vh;
+  margin: 30rpx;
+  border-radius: 16rpx;
+  overflow: hidden;
+  position: relative;
+}
+
+.custom-webview {
+  width: 100%;
+  height: 100%;
+}

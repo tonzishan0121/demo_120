@@ -1,0 +1,64 @@
+/* 通用容器样式 */
+.container {
+  padding: 30rpx;
+}
+
+.template-header {
+  padding: 40rpx 0;
+  border-bottom: 2rpx solid #eee;
+}
+
+.header-title {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+/* 卡片式布局 */
+.course-card {
+  display: flex;
+  margin: 20rpx 0;
+  background: #fff;
+  border-radius: 16rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.1);
+}
+
+.card-image {
+  width: 240rpx;
+  height: 180rpx;
+  border-radius: 16rpx 0 0 16rpx;
+}
+
+.card-content {
+  flex: 1;
+  padding: 20rpx;
+}
+
+/* 标签式布局 */
+.knowledge-item {
+  padding: 30rpx;
+  margin: 20rpx 0;
+  background: #f8f9fa;
+  border-radius: 12rpx;
+}
+
+.item-tags {
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+}
+
+.tag {
+  display: inline-block;
+  padding: 8rpx 16rpx;
+  margin: 0 10rpx 10rpx 0;
+  background: #e9ecef;
+  border-radius: 8rpx;
+}
+
+/* 列表通用样式 */
+.list-item {
+  padding: 30rpx;
+  margin: 20rpx 0;
+  background: #fff;
+  border-radius: 12rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.05);
+}

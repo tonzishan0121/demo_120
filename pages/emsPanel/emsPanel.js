@@ -2,7 +2,7 @@ const { requestAndSetData } = require("../../utils/util");
 
 Page({
   data: {
-    TabCur:1,
+    TabCur:2,
     selector:["进行调度","调度记录","数据分析"],
     ambulance:{
       "idle_percentage": 0,

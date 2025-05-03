@@ -1,4 +1,3 @@
-/* page.wxss */
 .container {
   position: relative;
   width: 100%;

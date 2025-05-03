@@ -1,4 +1,4 @@
-const formatTime = date => {
+export const formatTime = date => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
   const day = date.getDate()
@@ -9,7 +9,7 @@ const formatTime = date => {
   return `${[year, month, day].map(formatNumber).join('/')} ${[hour, minute, second].map(formatNumber).join(':')}`
 };
 
-const formatNumber = n => {
+export const formatNumber = n => {
   n = n.toString()
   return n[1] ? n : `0${n}`
 };
@@ -22,7 +22,7 @@ const formatNumber = n => {
  * @param {Object} [context=this] - 数据存储的上下文对象，默认为当前this对象。
  * @returns {Promise} - 返回一个Promise对象，请求成功时resolve，失败时reject。
  */
-function requestAndSetData(url, dataKey, context=this) {
+export function requestAndSetData(url, dataKey, context=this) {
   return new Promise((resolve, reject) => {
     wx.request({
       url: url,
@@ -47,7 +47,7 @@ function requestAndSetData(url, dataKey, context=this) {
  * @param {number} wait - 等待时间（毫秒）
  * @returns {Function} - 返回防抖后的函数
  */
-function debounce(func, wait) {
+export function debounce(func, wait) {
   let timeout;
   return function (...args) {
     const context = this;
@@ -64,7 +64,7 @@ function debounce(func, wait) {
  * @param {number} wait - 等待时间（毫秒）
  * @returns {Function} - 返回节流后的函数
  */
-function throttle(func, wait) {
+export function throttle(func, wait) {
   let lastTime = 0;
   return function (...args) {
     const now = Date.now();
@@ -73,11 +73,4 @@ function throttle(func, wait) {
       lastTime = now;
     }
   };
-}
-
-module.exports = {
-  formatTime:formatTime,
-  requestAndSetData:requestAndSetData,
-  debounce:debounce,
-  throttle:throttle
 }

@@ -1,0 +1,13 @@
+<view class="container">
+  <!-- 新增导航栏 -->
+  <view class="nav-bar">
+    <text class="nav-title">{{pageTitle}}</text>
+  </view>
+
+  <!-- 滚动容器包裹web-view -->
+  <scroll-view class="content-scroll" scroll-y>
+    <view class="webview-container">
+      <web-view src="{{url}}" class="custom-webview"></web-view>
+    </view>
+  </scroll-view>
+</view>

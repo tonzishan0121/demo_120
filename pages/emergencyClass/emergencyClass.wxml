@@ -12,16 +12,19 @@
       <view class="search-icon">
         <image class="search-image" src="/static/people.png" />
       </view>
-      <view class="search-input">
-        <text class="search-text">搜索急救知识/课程/资讯</text>
-      </view>
+      <input class="search-input" placeholder="搜索急救知识/课程/资讯">
+      </input>
     </view>
   </view>
   <view class="feature-modules">
     <block wx:for="{{featureModules}}" wx:key="index">
-      <view class="feature-module" style="background-color: {{item.backgroundColor}};">
+      <view 
+        class="feature-module" 
+        style="background-color: {{item.backgroundColor}};"
+        bindtap="handleModuleTap"
+        data-index="{{index}}">
         <view class="feature-icon">
-          <image class="feature-image" src="{{item.icon}}" />
+          <image class="feature-image" src="{{item.icon}}"/>
         </view>
         <view class="feature-title">
           <text class="feature-text">{{item.title}}</text>
@@ -39,7 +42,7 @@
         <image class="more-image" src="/static/arrow.png" />
       </view>
     </view>
-    <view class="course-cards">
+    <view class="course-cards"  bindtap="handleViewAllCourses">
       <block wx:for="{{recommendedCourses}}" wx:key="index">
         <view class="course-card">
           <view class="course-image">
@@ -70,7 +73,7 @@
     </view>
     <view class="news-items">
       <block wx:for="{{latestNews}}" wx:key="index">
-        <view class="news-item">
+        <view class="news-item" bindtap="handleNewsTap" data-url="{{item.link}}">
           <view class="news-image">
             <image class="news-img" src="{{item.image}}" />
           </view>
@@ -85,4 +88,5 @@
       </block>
     </view>
   </view>
+  <aiTeacher></aiTeacher>
 </view>

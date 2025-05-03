@@ -1,0 +1,13 @@
+<view class="container">
+  <!-- 复用图表组件1 -->
+  <ec-chart 
+    option="{{option1}}" 
+    chart-type="line"
+  />
+  
+  <!-- 复用图表组件2 -->
+  <ec-chart
+    option="{{option2}}"
+    chart-type="bar"
+  />
+</view>

@@ -1,0 +1,94 @@
+.robot-container {
+  position: fixed;
+  right: 30rpx;
+  bottom: 150rpx;
+  z-index: 999;
+}
+
+.robot-icon {
+  width: 100rpx;
+  height: 100rpx;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-20rpx); }
+}
+
+.chat-panel {
+  position: fixed;
+  right: 30rpx;
+  bottom: 280rpx;
+  width: 80%;
+  background: #fff;
+  border-radius: 16rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.1);
+  padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+  flex-direction: row;
+}
+
+.question-input{
+  flex: 1;
+  border: 1rpx solid #eee;
+  padding: 10rpx;
+  border-radius: 8rpx;
+
+}
+
+.submit-btn{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+/* 消息容器 */
+.message-container {
+  max-height: 500rpx;
+  min-height: 200rpx;
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+}
+
+.message-item {
+  margin: 20rpx 0;
+  max-width: 80%;
+  word-break: break-word;
+}
+
+.message-item.user {
+  margin-left: auto;
+  background: #9EEA6A;
+  border-radius: 16rpx 16rpx 0 16rpx;
+  padding: 15rpx;
+}
+
+.message-item.ai {
+  background: #F1F1F1;
+  border-radius: 16rpx 16rpx 16rpx 0;
+  padding: 15rpx;
+}
+
+.message-from {
+  font-size: 20rpx;
+  color: #999;
+  margin-top: 10rpx;
+}
+
+.message-item.ai .message-content .loading{
+  background: #f0f0f0;
+  color: #666;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% { opacity: 0.8; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0.8; }
+}

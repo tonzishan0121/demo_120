@@ -1,0 +1,36 @@
+<view class="robot-container" catch:tap="toggleChatPanel">
+  <image class="robot-icon" src="/static/AI 助教icon.png" animation="{{bounceAnim}}"></image>
+</view>
+
+<!-- 聊天面板 -->
+<view class="chat-panel" hidden="{{!showPanel}}">
+  <scroll-view 
+    class="message-container" 
+    scroll-y 
+    scroll-top="{{scrollTop}}"
+    scroll-with-animation
+  >
+    <block wx:for="{{messages}}" wx:key="index">
+      <view class="message-item {{item.isUser ? 'user' : 'ai'}}">
+        <view class="message-content">{{item.message}}</view>
+        <view class="message-from">{{item.isUser?"我":"助教"}}</view>
+      </view>
+    </block>
+    <block wx:if="{{isLoading}}">
+      <view class="message-item ai loading">
+        <view class="message-content">助教正在思考中...</view>
+        <view class="message-from">助教</view>
+      </view>
+    </block>
+  </scroll-view>
+  <input 
+    placeholder="输入问题..." 
+    value="{{inputValue}}"
+    class="question-input"
+    bindinput="inputMessage"
+  />
+  <div class="submit-btn">
+    <button bindtap="clearMessage">清空消息</button>
+    <button bindtap="submitQuestion">发送问题</button>
+  </div>
+</view>

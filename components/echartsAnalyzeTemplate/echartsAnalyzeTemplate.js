@@ -47,11 +47,16 @@ function initChart(canvas, width, height) {
   chart.setOption(option);
   return chart;
 }
+Component({
+  properties: {
+  },
 
-Page({
   data: {
     ec: {
       onInit: initChart
     }
+  },
+
+  methods: {
   }
-});
+})

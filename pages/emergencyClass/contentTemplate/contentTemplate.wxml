@@ -1,0 +1,42 @@
+<view class="container">
+  <!-- 通用头部 -->
+  <view class="template-header">
+    <text class="header-title">{{pageTitle}}</text>
+  </view>
+
+  <!-- 内容容器 -->
+  <scroll-view class="content-scroll" scroll-y>
+    <!-- 课程模板 -->
+    <block wx:if="{{contentType === 'course'}}">
+      <view wx:for="{{contentList}}" wx:key="id" class="course-card">
+        <image class="card-image" src="{{item.cover}}" />
+        <view class="card-content">
+          <text class="card-title">{{item.title}}</text>
+          <view class="meta-info">
+            <text>时长: {{item.duration}}\n</text>
+            <text>难度: {{item.level}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <!-- 知识库模板 -->
+    <block wx:elif="{{contentType === 'knowledge'}}">
+      <view wx:for="{{contentList}}" wx:key="id" class="knowledge-item">
+        <text class="item-title">{{item.category}}</text>
+        <view class="item-tags">
+          <text wx:for="{{item.tags}}" wx:key="index" class="tag">{{item}}</text>
+        </view>
+      </view>
+    </block>
+
+    <!-- 通用列表模板 -->
+    <block wx:else>
+      <view wx:for="{{contentList}}" wx:key="id" class="list-item">
+        <text class="list-title">{{item.title}}</text>
+        <text class="list-desc">{{item.summary}}</text>
+        <text class="list-time">{{item.date}}</text>
+      </view>
+    </block>
+  </scroll-view>
+</view>

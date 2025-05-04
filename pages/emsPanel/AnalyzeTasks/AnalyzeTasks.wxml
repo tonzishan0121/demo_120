@@ -1,0 +1,7 @@
+<!--pages/emsPanel/AnalyzeTasks/AnalyzeTasks.wxml-->
+<view class="container">
+  <span>24小时内任务变化情况</span>
+  <image src="{{imageUrl1}}" mode="aspectFit" />
+  <span>各区任务变化情况</span>
+  <image src="{{imageUrl2}}" mode="aspectFit" />
+</view>

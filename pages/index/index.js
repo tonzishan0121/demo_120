@@ -1,6 +1,7 @@
 import {requestAndSetData} from "../../utils/util.js";
 Page({
   data: {
+    email:'',
     today_task:{
       "change_percentage": 0,
       "today_task_count": 0
@@ -32,13 +33,31 @@ Page({
     });
   },
 
-  
   showUserInfo(){
     wx.getStorage({
       key:"access_token",
       success:(res)=>{
         if(res.data){
           wx.showToast({title: "登陆成功！",icon:"success"}); 
+          wx.getStorage({
+            key:'email',
+            success:(email)=>{
+              this.setData({
+                email:email
+              });
+            }
+          });
+          wx.request({
+            url: getApp().globalData.flask_ip+"/update_time",
+            method:"POST",
+            access_token:res.data,
+            header:{
+              'Authorization': 'Bearer ' + res.data
+            },
+            data:{
+              'email':this.data.email
+            }
+          })
         }else{
           wx.showToast({title: "游客登录！",icon:"success"});
         }

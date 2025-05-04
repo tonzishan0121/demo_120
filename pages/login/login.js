@@ -32,6 +32,10 @@ Page({
             key: 'access_token',
             data: res.data.access_token
           });
+          wx.setStorage({
+            key:'email',
+            data:this.data.email
+          })
           wx.redirectTo({
             url: '/pages/index/index'
           })

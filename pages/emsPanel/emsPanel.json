@@ -6,6 +6,6 @@
   "usingComponents": {
     "RecentTasks":"/pages/emsPanel/RecentTasks/RecentTasks",
     "DoTasks":"/pages/emsPanel/DoTasks/DoTasks",
-    "Analyze120":"/pages/emsPanel/Analyze120/Analyze120"
+    "AnalyzeTasks":"/pages/emsPanel/AnalyzeTasks/AnalyzeTasks"
   }
 }

@@ -4,10 +4,8 @@
     "pages/index/index",
     "pages/emsPanel/emsPanel",
     "pages/emergencyClass/emergencyClass",
-    "pages/test_page/test_page",
     "pages/emergencyClass/contentTemplate/contentTemplate",
-    "pages/emergencyClass/recommendClass/recommendClass",
-    "pages/emergencyClass/newsPage/newsPage"
+    "pages/emergencyClass/recommendClass/recommendClass"
   ],
   "window": {
     "navigationBarTitleText": "120急救大数据平台",

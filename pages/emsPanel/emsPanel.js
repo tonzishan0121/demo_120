@@ -1,8 +1,8 @@
-const { requestAndSetData } = require("../../utils/util");
+import { requestAndSetData } from "../../utils/util";
 
 Page({
   data: {
-    TabCur:2,
+    TabCur:1,
     selector:["进行调度","调度记录","数据分析"],
     ambulance:{
       "idle_percentage": 0,
@@ -22,19 +22,30 @@ Page({
   },
 
   onLoad(){
-    wx.request({
-      url: getApp().globalData.flask_ip+'/tasks', // 请求的后端 URL
-      method: 'GET', 
-      success: (res)=> {
-        let tasks=this.sortTasks(res.data);
-        wx.setStorage({
-          key:'tasks', data:tasks
+    wx.getStorage({
+      key:"access_token",
+      success:(token)=>{
+        wx.request({
+          url: getApp().globalData.flask_ip+'/tasks', // 请求的后端 URL
+          method: 'GET', 
+          header:{
+            'Authorization': 'Bearer ' + token.data
+          },
+          success: (res)=> {
+            let tasks=this.sortTasks(res.data);
+            wx.setStorage({
+              key:'tasks', data:tasks
+            });
+          },
+          fail: function(error) {
+            console.error(error);
+          }
         });
-      },
-      fail: function(error) {
-        console.error(error);
       }
     });
+   
+    
+    
     const flask_ip=getApp().globalData.flask_ip;
     Promise.all([
       requestAndSetData(flask_ip+"/ambulance_statistics","ambulance",this),

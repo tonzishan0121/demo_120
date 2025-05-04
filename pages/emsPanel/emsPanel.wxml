@@ -52,7 +52,7 @@
   <view class="contents">
     <RecentTasks wx:if="{{TabCur==1}}"></RecentTasks>
     <DoTasks wx:if="{{TabCur==0}}"></DoTasks>
-    <Analyze120 wx:if="{{TabCur==2}}"></Analyze120>
+    <AnalyzeTasks wx:if="{{TabCur==2}}"> 占位</AnalyzeTasks>
   </view>
   <scroll-view scroll-x class="bg-white nav text-center">
     <view class="cu-item {{index == TabCur ? 'text-blue cur' : ''}}" wx:for="{{selector}}" wx:key="index" bindtap="tabSelect" data-index="{{index}}">
